@@ -88,7 +88,6 @@ a {
   padding: 4px;
   outline: none;
   color: #44A6A6;
-  background-color: #F2F2F2;
 }
 
 .cards-grid {
@@ -100,6 +99,7 @@ a {
   grid-template-rows: repeat(auto-fit, 420px);
   align-items: center;
   justify-content: center;
+  min-height: 620px;
 }
 
 .card {
