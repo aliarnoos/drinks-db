@@ -137,6 +137,9 @@ a {
     }
 }
 footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     background-color: $main-color;
     color: $back-color;
     text-align: center;

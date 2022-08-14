@@ -130,6 +130,9 @@ a {
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   background-color: #44A6A6;
   color: #F2F2F2;
   text-align: center;

@@ -8,7 +8,7 @@ function Detail (props) {
         <>
         <NavBar/>
         <div className='info-card'>
-            <img src={props.data.img} alt="drinks photo" />
+            <img src={props.data.img} alt="drink" />
             <div className='detail-info'>
                 <ul>
                     <li>
