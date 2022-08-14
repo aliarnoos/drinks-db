@@ -5,12 +5,12 @@ function NavBar() {
     <>
       <nav>
         <h1>
-          <Link to="/">HomeCocktails</Link>
+          <Link to="/drinks-db">HomeCocktails</Link>
         </h1>
         <div className="nav-btns">
           <ul>
             <li>
-              <Link to="/">Home</Link>{" "}
+              <Link to="/drinks-db">Home</Link>{" "}
             </li>
             <li>
               <Link to="/About"> About</Link>

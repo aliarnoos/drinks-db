@@ -91,11 +91,7 @@ const App = () => {
     <>
       <BrowserRouter>
         <Routes>
-          <Route
-            path="/"
-            exact
-            element={<Home cards={cards} searchData={searchData} />}
-          />
+          <Route path="/drinks-db" exact element={<Home cards={cards} searchData={searchData} />}/>
           <Route path="/About" exact element={<About />} />
           <Route path="/Detail/:id" element={<Detail data={data} />} />
         </Routes>
