@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/drinks-db/static/css/main.08324dbb.css",
-    "main.js": "/drinks-db/static/js/main.26d88502.js",
+    "main.css": "/drinks-db/static/css/main.f796777e.css",
+    "main.js": "/drinks-db/static/js/main.a87fdf77.js",
     "index.html": "/drinks-db/index.html",
-    "main.08324dbb.css.map": "/drinks-db/static/css/main.08324dbb.css.map",
-    "main.26d88502.js.map": "/drinks-db/static/js/main.26d88502.js.map"
+    "main.f796777e.css.map": "/drinks-db/static/css/main.f796777e.css.map",
+    "main.a87fdf77.js.map": "/drinks-db/static/js/main.a87fdf77.js.map"
   },
   "entrypoints": [
-    "static/css/main.08324dbb.css",
-    "static/js/main.26d88502.js"
+    "static/css/main.f796777e.css",
+    "static/js/main.a87fdf77.js"
   ]
 }
