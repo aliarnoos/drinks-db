@@ -137,9 +137,9 @@ a {
     }
 }
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    // position: fixed;
+    // bottom: 0;
+    // width: 100%;
     background-color: $main-color;
     color: $back-color;
     text-align: center;
@@ -166,19 +166,20 @@ footer {
     }
 }
 .info-card {
-    width: 1000px;
+    width: 80%;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
+    margin-block: 100px;
     border-radius: 16px;
     margin-top: 10vh;
-    height: 660px;
     display: flex;
     gap: 40px;
     padding: 20px;
     justify-content: flex-start;
     align-items: center;
     img {
-        width: 520px;
+        max-width: 70%;
         border-radius: 30px 10px ;
     }
 }
@@ -212,4 +213,42 @@ footer {
     a {
         padding: 10px;
     }
+}
+
+@media only screen and (max-width: 500px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        .nav-btns {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .search-bar {
+        width: 80%;
+        font-size: 20px;
+        border: 2px solid $main-color;
+        border-radius: 10px;
+        padding: 4px;
+        outline: none;
+        color: $main-color;
+    
+    }
+    .info-card {
+        flex-direction: column;
+        width: 90%;
+        margin: 10px;
+        border-radius: 16px;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 80px;
+        img {
+            width: 80%;
+            border-radius: 30px 10px ;
+        }
+    }
+
 }

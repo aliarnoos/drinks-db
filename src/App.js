@@ -25,7 +25,7 @@ const App = () => {
               name={card.strDrink}
               id={card.idDrink}
               key={card.idDrink}
-              fetchDetails={() => fetchDetails(card.idDrink)}
+              // fetchDetails={() => fetchDetails(card.idDrink)}
             />
           ))
         )
@@ -56,44 +56,44 @@ const App = () => {
           name={card.strDrink}
           key={card.idDrink}
           id={card.idDrink}
-          fetchDetails={() => fetchDetails(card.idDrink)}
+          // fetchDetails={() => fetchDetails(card.idDrink)}
         />
       ))
     );
   };
 
-  const [data, setData] = useState({});
-  const fetchDetails = async (drinkId) => {
-    setData({});
-    const response = await fetch(
-      `https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${drinkId}`,
-      {
-        headers: {
-          Accept: "application/json",
-        },
-      }
-    );
-    const data = await response.json();
-    let ingredients = "";
-    for (let i = 1; i < 15; i++) {
-      if (data.drinks[0][`strIngredient${i}`] === null) continue;
-      ingredients += data.drinks[0][`strIngredient${i}`] + ", ";
-    }
-    setData({
-      img: data.drinks[0].strDrinkThumb,
-      name: data.drinks[0].strDrink,
-      glass: data.drinks[0].strGlass,
-      inst: data.drinks[0].strInstructions,
-      ingr: ingredients,
-    });
-  };
+  // const [data, setData] = useState({});
+  // const fetchDetails = async (drinkId) => {
+  //   setData({});
+  //   const response = await fetch(
+  //     `https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${drinkId}`,
+  //     {
+  //       headers: {
+  //         Accept: "application/json",
+  //       },
+  //     }
+  //   );
+  //   const data = await response.json();
+  //   let ingredients = "";
+  //   for (let i = 1; i < 15; i++) {
+  //     if (data.drinks[0][`strIngredient${i}`] === null) continue;
+  //     ingredients += data.drinks[0][`strIngredient${i}`] + ", ";
+  //   }
+  //   setData({
+  //     img: data.drinks[0].strDrinkThumb,
+  //     name: data.drinks[0].strDrink,
+  //     glass: data.drinks[0].strGlass,
+  //     inst: data.drinks[0].strInstructions,
+  //     ingr: ingredients,
+  //   });
+  // };
   return (
     <>
       <BrowserRouter>
         <Routes>
           <Route path="/drinks-db" exact element={<Home cards={cards} searchData={searchData} />}/>
           <Route path="/About" exact element={<About />} />
-          <Route path="/Detail/:id" element={<Detail data={data} />} />
+          <Route path="/Detail/:id" element={<Detail />} />
         </Routes>
       </BrowserRouter>
       <Footer />
